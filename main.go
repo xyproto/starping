@@ -71,9 +71,9 @@ func main() {
 			currentStars = totalStars
 		}
 
-		// If the star count has increased, print "PING!" and update currentStars
+		// If the star count has increased, print "STAR!" and update currentStars
 		if totalStars > currentStars {
-			fmt.Println("PING!")
+			fmt.Println("STAR!")
 			currentStars = totalStars
 		}
 
