@@ -35,6 +35,10 @@ func fetchRepositories(username string) ([]Repository, error) {
 			return nil, err
 		}
 
+		if len(body) == 0 {
+			break
+		}
+
 		// Unmarshal the JSON response into a slice of Repository
 		var pageRepos []Repository
 		if err := json.Unmarshal(body, &pageRepos); err != nil {
